@@ -16,5 +16,5 @@ const averagePopulationValue = Math.round(
   sumPopulation / allPopulationValues.length,
 );
 
-totalPopulation.textContent = sumPopulation.toLocaleString('en-US');
-averagePopulation.textContent = averagePopulationValue.toLocaleString('en-US');
+totalPopulation.textContent = sumPopulation.toLocaleString();
+averagePopulation.textContent = averagePopulationValue.toLocaleString();

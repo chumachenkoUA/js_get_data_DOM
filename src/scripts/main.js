@@ -12,7 +12,9 @@ const sumPopulation = allPopulationValues.reduce((acc, curr) => {
   return acc + Number(curr.split(',').join(''));
 }, 0);
 
-const averagePopulationValue = sumPopulation / allPopulationValues.length;
+const averagePopulationValue = Math.round(
+  sumPopulation / allPopulationValues.length,
+);
 
 totalPopulation.textContent = sumPopulation.toLocaleString('en-US');
 averagePopulation.textContent = averagePopulationValue.toLocaleString('en-US');
